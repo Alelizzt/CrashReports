@@ -1,0 +1,3 @@
+rootProject.name = 'CrashReports'
+
+include ':app'
