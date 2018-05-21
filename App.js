@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 
 import Login from './src/pages/Login';
+import Report from './src/pages/Report';
+import Signup from './src/pages/Signup';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -18,6 +20,8 @@ export default class App extends Component<Props> {
         barStyle="light-content"/>
         
         <Login/>
+        {/*<Report/>
+        <Signup/>*/}
       </View>
     );
   }
