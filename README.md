@@ -28,3 +28,11 @@ Iniciar android avd y arrancar un emulador
 ```
 react-native run-android
 ```
+* Si decide utilizar un smartphone 
+```
+adb reverse tcp:8081 tcp:8081
+```
+```
+react-native run-android
+```
+**NOTA** Si utiliza Windows agregue `%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools` al path para utilizar **adb**.
