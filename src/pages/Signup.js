@@ -4,14 +4,20 @@ import {
   StyleSheet,
   Text,
   View,
-  StatusBar
+  StatusBar,
+  TouchableOpacity,
 } from 'react-native';
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
 
+import { Actions } from 'react-native-router-flux';
+
 type Props = {};
 export default class Signup extends Component<Props> {
+  goBack() {
+      Actions.pop();
+    }
 	render(){
 		return(
 			<View style={styles.container}>
@@ -19,7 +25,7 @@ export default class Signup extends Component<Props> {
 				<Form type="Signup"/>
 				<View styles={styles.signupTextCont}>
 					<Text style={styles.signupText}>Already have an acoount?</Text>
-					<Text style={styles.signupButton}>Signin</Text>
+					<TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> Sign in</Text></TouchableOpacity>
 				</View>
 			</View>
 			)

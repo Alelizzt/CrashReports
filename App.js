@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {
   Platform,
   StyleSheet,
@@ -6,23 +7,20 @@ import {
   StatusBar
 } from 'react-native';
 
-import Login from './src/pages/Login';
-import Report from './src/pages/Report';
-import Signup from './src/pages/Signup';
+import Routes from './src/Routes';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar 
-        backgroundColor="#1c313a" 
+        <StatusBar
+        backgroundColor="#1c313a"
         barStyle="light-content"/>
-        
-        <Login/>
-        {/*<Report/>
-        <Signup/>*/}
+
+        <Routes/>
       </View>
+
     );
   }
 }

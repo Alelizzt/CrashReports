@@ -5,7 +5,7 @@ import {
   Text,
   View,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 /*import MapView from 'react-native-maps';*/
 
@@ -38,7 +38,7 @@ export default class Home extends Component<Props> {
               />
 		        <TouchableOpacity style={styles.button}>
 		          <Text style={styles.buttonText}>Send</Text>
-		        </TouchableOpacity>  
+		        </TouchableOpacity>
 			</View>
 			)
 	}
